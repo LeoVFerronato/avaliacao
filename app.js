@@ -128,7 +128,8 @@ function zerar() {
 }
 function abrirWhatsApp() {
     const phone = 5554999669270;
-    const message = "Total avaliado: " + total.textContent + "\nDermatite: " + dermatite.textContent;
+    const total = document.getElementById('total').textContent;
+    const message = "Total avaliado: " + total + "\nDermatite: " + dermatite.textContent;
     const link = `https://wa.me/${phone}?text=${message}`;
     window.open(link, '_blank');
   }
