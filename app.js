@@ -128,7 +128,7 @@ function zerar() {
 }
 function abrirWhatsApp() {
     const phone = 5554999669270;
-    const message = "Total avaliado: " + document.getElementById('total');
+    const message = "Total avaliado: " + total.textContent;
     const link = `https://wa.me/${phone}?text=${message}`;
     window.open(link, '_blank');
   }
