@@ -129,7 +129,8 @@ function zerar() {
 }
 function mostrarValor() {
       var selecionado = document.getElementById("aviarios");
-      var valorSelecionado = selecionado.textContent;
+      var valorSelecionado = selecionado.value;
+      document.getElementById("resultado").textContent = "Você selecionou: " + valorSelecionado;
 }
 function abrirWhatsApp() {
     const phone = 5554999669270;
