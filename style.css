@@ -70,3 +70,15 @@ footer {
 button, p, span, h4, p2 {
     display:inline-table;
 }
+select {
+    font-family: "Chakra Petch", sans-serif;
+    color: #333;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+}
