@@ -128,10 +128,9 @@ function zerar() {
     localStorage.setItem("calo_de_pata", 0);
 }
 function abrirWhatsApp() {
-    var selecionado = document.getElementById("aviarios");
-    var avselect = selecionado.textContent;
+    let selecionado = document.getElementById("aviarios");
     const phone = 5554999669270;
-    const message = avselect + "Total avaliado: " + total.textContent + "\n Dermatite: " + dermatite.textContent + " - " + percentual_dermatite.textContent + "\n Dermatose: " + dermatose.textContent + " - " + percentual_dermatose.textContent + "\n Artrite: " + artrite.textContent + " - " + percentual_artrite.textContent + "\n Calo de pata: " + calo_de_pata.textContent + " - " + percentual_calo_de_pata.textContent;
+    const message = selecionado.textContent + "Total avaliado: " + total.textContent + "\n Dermatite: " + dermatite.textContent + " - " + percentual_dermatite.textContent + "\n Dermatose: " + dermatose.textContent + " - " + percentual_dermatose.textContent + "\n Artrite: " + artrite.textContent + " - " + percentual_artrite.textContent + "\n Calo de pata: " + calo_de_pata.textContent + " - " + percentual_calo_de_pata.textContent;
     const link = `https://wa.me/${phone}?text=${message}`;
     window.open(link, '_blank');
 }
