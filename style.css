@@ -75,7 +75,6 @@ button, p, span, h4, p2 {
 select {
     font-family: "Chakra Petch", sans-serif;
     color: #333;
-    width: 200px;
     justify-content: center;
     text-align: center;
     width: 200px;
@@ -88,8 +87,37 @@ select {
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 
 }
-
-h1{
+h1 {
     justify-content: center;
     text-align: center;
+}
+.ddd {
+    font-family: "Chakra Petch", sans-serif;
+    color: #333;
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #FFFFFF; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    border: 1px solid #000000;
+}
+.telefone {
+    font-family: "Chakra Petch", sans-serif;
+    color: #333;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #FFFFFF; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    border: 1px solid #000000;
 }
