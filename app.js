@@ -19,6 +19,14 @@ window.onload = function() {
     if (storedCalo) {
       document.getElementById("calo_de_pata").textContent = storedCalo;
     }
+    const storedDDD = localStorage.getItem("DDD");
+    if (storedDDD) {
+      document.getElementById("DDD").value = storedDDD;
+    }
+    const storedtelefone = localStorage.getItem("telefone");
+    if (storedtelefone) {
+      document.getElementById("telefone").value = storedtelefone;
+    }
     atualizar_percentuais();
 }
 
@@ -128,8 +136,10 @@ function zerar() {
     localStorage.setItem("calo_de_pata", 0);
 }
 function abrirWhatsApp() {
-    const phone = "5554" + telefone.value;
+    const phone = "55" + DDD.value + telefone.value;
     const message = aviarios.value + "\nTotal avaliado: " + total.textContent + "\nDermatite: " + dermatite.textContent + " - " + percentual_dermatite.textContent + "\nDermatose: " + dermatose.textContent + " - " + percentual_dermatose.textContent + "\nArtrite: " + artrite.textContent + " - " + percentual_artrite.textContent + "\nCalo de pata: " + calo_de_pata.textContent + " - " + percentual_calo_de_pata.textContent;
+    localStorage.setItem("DDD", DDD.value);
+    localStorage.setItem("telefone", telefone.value);
     const link = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(link, '_blank');
 }
